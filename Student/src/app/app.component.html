@@ -1,0 +1,8 @@
+<h1>Student Details</h1>
+<div *ngFor="let student of students">
+  <h2>Name : {{student.name}}</h2>
+  <p>DOB : {{student.DOB}}</p>
+  <p>Course : {{student.course}}</p>
+  <p>Age : {{student.DOB | age}}</p>
+  <p>Fees : {{student.fees}}</p>
+</div>
