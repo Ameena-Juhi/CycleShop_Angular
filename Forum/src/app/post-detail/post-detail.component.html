@@ -1,0 +1,7 @@
+<div *ngIf="post">
+    <h2>Post Details</h2>
+    <p><strong>ID:</strong> {{ postId}}</p>
+    <p><strong>Content:</strong> {{ post.content }}</p>
+    <p><strong>Created Time:</strong> {{ post.createdTime | date }}</p>
+  </div>
+

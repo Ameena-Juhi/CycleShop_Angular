@@ -1,0 +1,7 @@
+<h1>Posts</h1>
+<div>
+  <p>Enter Post ID:</p>
+  <input type="number" [(ngModel)]="postId" placeholder="Enter the post ID">
+  <button (click)="navigateToDetail()">View Post</button>
+</div>
+<router-outlet></router-outlet>
