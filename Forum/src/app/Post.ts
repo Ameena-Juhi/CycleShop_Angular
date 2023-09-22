@@ -1,5 +1,6 @@
 export interface Post{
-    id: number;
+    postId: number;
     content: string;
     createdTime: Date;
+    likesCount: number;
 }

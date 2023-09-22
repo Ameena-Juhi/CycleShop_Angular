@@ -10,7 +10,7 @@ import { Post } from '../Post';
   styleUrls: ['./post-detail.component.css']
 })
 export class PostDetailComponent {
-  post: Post | any;
+  post?: Post;
 postId:number=13;
 
 constructor(private postService: PostService, private route: ActivatedRoute){}
