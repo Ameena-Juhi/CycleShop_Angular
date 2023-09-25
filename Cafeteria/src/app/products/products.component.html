@@ -1,0 +1,14 @@
+<h1>Vending machine Items</h1>
+<ul>
+  <li *ngFor="let product of products">
+    <p>ID: {{ product.id }}</p>
+    <p>Name: {{ product.name }}</p>
+    <p>Stock: {{ product.stock }}</p>
+    <p>Price: {{ product.price }}</p>
+    <!-- <button (click)="addToCart(product.id)">Add to Cart</button>
+  </li>
+</ul>
+
+<p>Enter a product id:</p>
+<input type="number" [(ngModel)]="Id" placeholder="Id">
+<button (click)="addToCart(Id)">Submit</button> -->

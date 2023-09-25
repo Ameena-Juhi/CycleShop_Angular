@@ -1,0 +1,14 @@
+<ul>
+    <li *ngFor="let cartItem of cartItems" class="cart-item">
+      <p class="item-id">{{cartItem.id}}</p>
+      <p class="item-name">{{cartItem.name}}</p>
+      <p class="item-quantity">Quantity: {{ cartItem.stock }}</p>
+      <p class="item-price">Price: {{ cartItem.price }}</p>
+      <input type="number" [(ngModel)]="quantity" class="quantity-input" placeholder="quantity">
+      <button (click)="addQuantity(quantity, cartItem)" class="add-button">Add Quantity</button>
+      <p class="item-subtotal">SubTotal: ${{ calculateTotalPrice(cartItem) }}</p>
+    </li>
+  </ul>
+  
+  <p class="bill-amount">Bill Amount: ${{ generateBill() }}</p>
+  

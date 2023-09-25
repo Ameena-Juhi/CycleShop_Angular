@@ -40,8 +40,6 @@ export class CartComponent implements OnInit {
       for(let c of this.cartCycles){
         this.total += c.subTotal();
       }
-      // // Calculate the total price based on cart items
-      // this.totalPrice = this.cartCycles.reduce((totalPrice: any, cycle: { price: any; }) => totalPrice + cycle.price, 0);
     });
   }
 
