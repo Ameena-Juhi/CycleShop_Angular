@@ -1,0 +1,24 @@
+<h2>Comments Details</h2>
+<div *ngFor="let comment of comments">
+    <p>Comment Id: {{comment.id}}</p>
+    <p>Comment : {{comment.content}}</p>
+    <p>Commented Time : {{comment.commentedTime}}</p>
+    <p>UserId of the user who commented : {{comment.userId}}</p>
+</div>
+<div>
+    <input type="text" [(ngModel)]="content" placeholder="content">
+    <button (click)="addcomment(postId,content)">Add Comment</button>
+</div>
+
+<!-- <div *ngFor="let comment of commentsWithTags | keyvalue">
+    <p><strong>Comment:</strong> {{ comment }}</p>
+    <ul>
+      <li *ngFor="let tag of tags">
+        <strong>Tag:</strong> {{ tag }}
+      </li>
+    </ul>
+    <hr />
+  </div>
+   -->
+
+

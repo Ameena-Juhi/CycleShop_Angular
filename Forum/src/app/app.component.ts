@@ -18,4 +18,8 @@ export class AppComponent {
       this.router.navigate(['/post', this.postId]);
   }
 
+  navigateToComments(): void {
+    this.router.navigate(['/comments',this.postId]);
+  }
+
 }
