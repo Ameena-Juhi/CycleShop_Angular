@@ -1,0 +1,49 @@
+/* Styling for the Tic-Tac-Toe board */
+.tic-tac-toe {
+    text-align: center;
+    font-family: Arial, sans-serif;
+    padding: 20px;
+  }
+  
+  .board {
+    display: grid;
+    grid-template-columns: repeat(3, 100px);
+    grid-gap: 5px;
+    justify-content: center;
+    margin-top: 20px;
+  }
+  
+  .cell {
+    width: 100px;
+    height: 100px;
+    font-size: 36px;
+    text-align: center;
+    line-height: 100px;
+    background-color: #e7a9df;
+    cursor: pointer;
+  }
+  
+  .cell:hover {
+    background-color: #8cb8f3;
+  }
+  
+  .status {
+    font-size: 24px;
+    margin-top: 10px;
+  }
+  
+  button {
+    font-size: 18px;
+    padding: 10px 20px;
+    margin-top: 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  button:hover {
+    background-color: #0056b3;
+  }
+  

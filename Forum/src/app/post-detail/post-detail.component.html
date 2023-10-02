@@ -1,8 +1,8 @@
-<div *ngIf="post">
-    <h2>Post Details</h2>
-    <p><strong>ID:</strong> {{ post.postId}}</p>
-    <p><strong>Content:</strong> {{ post.content }}</p>
-    <p><strong>Created Time:</strong> {{ post.createdTime | date }}</p>
-    <p><strong>LikesCount:</strong>{{post.likesCount}}</p>
-  </div>
-
+<div *ngIf="post" class="post-container">
+  <h2 class="post-title">Post Details</h2>
+  <p class="post-details"><strong>ID:</strong> {{ post.postId}}</p>
+  <p class="post-details"><strong>Content:</strong> {{ post.content }}</p>
+  <p class="post-metadata"><strong>Created Time:</strong> {{ post.createdTime | date }}</p>
+  <button (click)="addlike(postId)">Like</button>
+  <p class="likes-count"><strong>LikesCount:</strong> {{post.likesCount}}</p>
+</div>

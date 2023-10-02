@@ -30,6 +30,10 @@ loadPost(): void {
     });
   }
 }
+
+addlike(postId:number){
+  this.postService.addLike(postId).subscribe((post) => this.post = post);
+}
   
   
 }

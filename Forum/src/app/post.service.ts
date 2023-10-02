@@ -28,4 +28,10 @@ export class PostService {
     );
   }
 
+  addLike(id:number): Observable<Post>{
+    return this.http.post<Post>(`http://localhost:8080/newforum/like/${id}`,{}).pipe(
+      tap(res => console.log(res))
+    );
+  }
+
 }

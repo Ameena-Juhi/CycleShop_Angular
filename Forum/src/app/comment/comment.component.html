@@ -1,24 +1,13 @@
-<h2>Comments Details</h2>
-<div *ngFor="let comment of comments">
-    <p>Comment Id: {{comment.id}}</p>
-    <p>Comment : {{comment.content}}</p>
-    <p>Commented Time : {{comment.commentedTime}}</p>
-    <p>UserId of the user who commented : {{comment.userId}}</p>
+<h2 class="comments-heading">Comments Details</h2>
+<div class="comments-container">
+    <div *ngFor="let comment of comments" class="comment">
+        <p class="comment-content">Comment Id: {{comment.id}}</p>
+        <p class="comment-content">Comment: {{comment.content}}</p>
+        <p class="comment-metadata">Commented Time: {{comment.commentedTime}}</p>
+        <p class="comment-metadata">User ID of the user who commented: {{comment.userId}}</p>
+    </div>
+    <div class="comment-input-section">
+        <input type="text" [(ngModel)]="content" class="comment-input" placeholder="Enter your comment">
+        <button (click)="addcomment(postId, content)" class="add-comment-button">Add Comment</button>
+    </div>
 </div>
-<div>
-    <input type="text" [(ngModel)]="content" placeholder="content">
-    <button (click)="addcomment(postId,content)">Add Comment</button>
-</div>
-
-<!-- <div *ngFor="let comment of commentsWithTags | keyvalue">
-    <p><strong>Comment:</strong> {{ comment }}</p>
-    <ul>
-      <li *ngFor="let tag of tags">
-        <strong>Tag:</strong> {{ tag }}
-      </li>
-    </ul>
-    <hr />
-  </div>
-   -->
-
-

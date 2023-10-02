@@ -1,8 +1,8 @@
 <h1>Posts</h1>
-<div>
+<div class="container">
   <p>Enter Post ID:</p>
   <input type="number" [(ngModel)]="postId" placeholder="Enter the post ID">
   <button (click)="navigateToDetail()">View Post</button>
-  <button (click)="navigateToComments()">View Comments and Likes</button>
+  <button (click)="navigateToComments()">View Comments</button>
 </div>
 <router-outlet></router-outlet>

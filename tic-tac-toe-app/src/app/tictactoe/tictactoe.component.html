@@ -1,0 +1,31 @@
+<div class="tic-tac-toe">
+    <h1>Tic-Tac-Toe</h1>
+  
+    <div class="status">
+      <ng-container *ngIf="winner; else currentPlayerDisplay">
+        <p>Winner: {{ winner }}</p>
+      </ng-container>
+      <ng-template #currentPlayerDisplay>
+        <p>Current Player: {{ currentPlayer }}</p>
+      </ng-template>
+    </div>
+  
+    <div class="board">
+      <div *ngFor="let row of board; let rowIndex = index" class="board-row">
+        <div
+          *ngFor="let cell of row; let colIndex = index"
+          class="cell"
+          (click)="makeMove(rowIndex, colIndex)"
+        >
+          {{ cell }}
+        </div>
+      </div>
+    </div>
+  
+    <div class="status" *ngIf="isDraw && !winner">
+      <p>It's a draw!</p>
+    </div>
+  
+    <button (click)="resetGame()">Restart Game</button>
+  </div>
+  

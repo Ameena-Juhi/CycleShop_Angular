@@ -4,19 +4,21 @@ import { FormsModule } from '@angular/forms';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { ProductComponent } from './product/product.component';
-import { CartComponent } from './cart/cart.component';
+import { HttpClientModule } from '@angular/common/http';
+import { HomeComponent } from './home/home.component';
+import { SectionpageComponent } from './sectionpage/sectionpage.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    ProductComponent,
-    CartComponent
+    HomeComponent,
+    SectionpageComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FormsModule
+    FormsModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]

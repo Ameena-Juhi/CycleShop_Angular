@@ -1,0 +1,69 @@
+/* Style the comments section */
+.comments-container {
+    background-color: #f7f7f7;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 15px;
+    margin-top: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Style the comments heading */
+  .comments-heading {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+  }
+  
+  /* Style each comment */
+  .comment {
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 10px;
+    margin-bottom: 10px;
+    background-color: #fff;
+  }
+  
+  /* Style comment content */
+  .comment-content {
+    font-size: 1rem;
+    color: #333;
+    margin-bottom: 5px;
+  }
+  
+  /* Style comment metadata */
+  .comment-metadata {
+    font-size: 0.8rem;
+    color: #888;
+  }
+  
+  /* Style the comment input section */
+  .comment-input-section {
+    margin-top: 20px;
+  }
+  
+  /* Style the comment input field */
+  .comment-input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    font-size: 1rem;
+  }
+  
+  /* Style the add comment button */
+  .add-comment-button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 1rem;
+  }
+  
+  /* Style the add comment button on hover */
+  .add-comment-button:hover {
+    background-color: #0056b3;
+  }
+  

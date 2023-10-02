@@ -7,16 +7,16 @@ import { Product } from './product';
 export class ProductService {
   private products: Product[] = [
     {
-      id: 1,
-      name: 'Frooti',
-      stock: 13,
-      price: 10
+      ItemId: 1,
+      ItemName: 'Frooti',
+      ItemStock: 13,
+      ItemPrice: 10
     },
     {
-      id: 2,
-      name: 'Bourbon',
-      stock: 25,
-      price: 15
+      ItemId: 2,
+      ItemName: 'Bourbon',
+      ItemStock: 25,
+      ItemPrice: 15
     }
   ];
 
